@@ -1,7 +1,3 @@
-# Descarga todas las imágenes del Hostal Boutique El Molino de Floren
-# organizadas en carpetas para usarlas en el proyecto Bootstrap.
-# Uso: clic derecho > "Ejecutar con PowerShell" (o doble clic en descargar-imagenes.bat)
-
 $base   = "https://res.cloudinary.com/amenitiz/image/upload/c_limit,w_1920,q_auto:good"
 $destino = Join-Path $PSScriptRoot "img"
 
