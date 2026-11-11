@@ -45,6 +45,17 @@ document.querySelectorAll(".campo-fecha input[type=date]").forEach((input) => {
 
 // El check-out nunca puede ser anterior al check-in
 if (checkin && checkout) {
+  // Nunca proponemos fechas pasadas: si la del HTML ya pasó, usamos mañana y pasado mañana
+  const hoy = new Date().toISOString().slice(0, 10);
+  checkin.min = hoy;
+  if (checkin.value < hoy) {
+    const dia = (n) => { const f = new Date(); f.setDate(f.getDate() + n); return f.toISOString().slice(0, 10); };
+    checkin.value = dia(1);
+    checkout.value = dia(3);
+    checkin.dispatchEvent(new Event("change"));
+    checkout.dispatchEvent(new Event("change"));
+  }
+
   const sincronizar = () => {
     checkout.min = checkin.value;
     if (checkout.value < checkin.value) {

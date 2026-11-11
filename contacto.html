@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · El Molino de Floren</title>
+  <meta name="description" content="Contacte con el Hostal Boutique El Molino de Floren.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="css/estilos.css?v=12" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="topbar-contacto">
+      <a href="tel:+34941342931"><img src="img/iconos/telefono.svg" width="14" height="14" alt="">+34 941 342 931</a>
+      <a href="mailto:info@elmolinodefloren.com"><img src="img/iconos/email.svg" width="14" height="14" alt="">info@elmolinodefloren.com</a>
+      <span class="d-none d-lg-flex"><img src="img/iconos/ubicacion.svg" width="14" height="14" alt="">C. Margubete, 5 · Santo Domingo de la Calzada</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-molino sticky-top">
+    <div class="navbar-wrap">
+      <a class="navbar-brand marca" href="index.html">
+        <img class="rueda rueda-giro" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" width="47" height="45" alt="">
+        <span class="marca-nombre">El Molino<br>de Floren</span>
+      </a>
+
+      <div class="nav-acciones order-lg-last">
+        <div class="dropdown">
+          <button class="idioma" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Cambiar idioma">
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/iconos/idioma.svg">
+              <img class="icono-idioma" src="img/iconos/idioma-movil.svg" width="16" height="16" alt="">
+            </picture>
+            ES
+            <img src="img/iconos/chevron.svg" width="14" height="14" alt="">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end desplegable">
+            <li><a class="dropdown-item active" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Italiano</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
+        </div>
+        <button class="boton-menu d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <img src="img/iconos/menu.svg" width="24" height="24" alt="">
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info <img src="img/iconos/chevron.svg" width="14" height="14" alt=""></a>
+            <ul class="dropdown-menu desplegable">
+              <li><a class="dropdown-item" href="hostal.html">Hostal Boutique</a></li>
+              <li><a class="dropdown-item" href="celebraciones.html">Celebraciones</a></li>
+              <li><a class="dropdown-item" href="regala.html">Regala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cabecera-pagina">
+    <img class="cabecera-foto" src="img/contacto/contacto.jpg" alt="">
+    <div class="contenedor cabecera-texto">
+      <ol class="migas" aria-label="Estás aquí">
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Contacto</li>
+      </ol>
+      <h1>Contáctenos</h1>
+      <p>¿Tiene alguna duda? Estaremos encantados de atenderle.</p>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="seccion seccion-puntos">
+    <img class="deco deco-espiga deco-espiga-1" src="img/deco/espiga.svg" alt="" aria-hidden="true">
+    <div class="contenedor">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <div class="caja-form">
+            <div class="cabecera-seccion">
+        <p class="eyebrow mb-0">Escríbanos</p>
+        
+        <h2 class="h2-molino mb-0">Formulario de contacto</h2>
+        
+      </div>
+            <form id="form-contacto" class="form-molino row g-3 mt-1" novalidate>
+              <div class="col-md-6">
+                <label class="form-label" for="c-nombre">Nombre completo</label>
+                <input class="form-control" id="c-nombre" name="nombre" autocomplete="name" required>
+                <div class="invalid-feedback">Escriba su nombre.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="c-telefono">Teléfono</label>
+                <input class="form-control" id="c-telefono" name="telefono" type="tel" autocomplete="tel" pattern="[0-9 +]{9,15}">
+                <div class="invalid-feedback">Teléfono no válido (9 cifras como mínimo).</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="c-email">Email</label>
+                <input class="form-control" id="c-email" name="email" type="email" autocomplete="email" required>
+                <div class="invalid-feedback">Escriba un email válido.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="c-asunto">Asunto</label>
+                <input class="form-control" id="c-asunto" name="asunto">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="c-mensaje">Mensaje</label>
+                <textarea class="form-control" id="c-mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
+                <div class="invalid-feedback">Cuéntenos un poco más (10 caracteres como mínimo).</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="c-privacidad" required>
+                  <label class="form-check-label" for="c-privacidad">Acepto la <a href="#">política de privacidad</a></label>
+                  <div class="invalid-feedback">Debe aceptar la política de privacidad.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-molino" type="submit">Enviar mensaje <img src="img/iconos/flecha-blanca.svg" width="18" height="18" alt=""></button>
+              </div>
+            </form>
+            <div id="contacto-ok" class="aviso-ok mt-3" role="status" hidden><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>¡Gracias! Hemos recibido su mensaje y le responderemos lo antes posible.</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="tarjeta-info">
+            <p class="eyebrow mb-2">Hostal Boutique</p>
+            <h3 class="mt-0">El Molino de Floren</h3>
+            <ul class="datos mt-3">
+              <li><img src="img/iconos/dato-ubicacion.svg" width="20" height="20" alt="">C. Margubete, 5 · 26250 Santo Domingo de la Calzada, La Rioja</li>
+              <li><img src="img/iconos/dato-telefono.svg" width="20" height="20" alt=""><span><a href="tel:+34941342931">+34 941 342 931</a> · <a href="tel:+34664191151">+34 664 191 151</a></span></li>
+              <li><img src="img/iconos/dato-email.svg" width="20" height="20" alt=""><a href="mailto:info@elmolinodefloren.com">info@elmolinodefloren.com</a></li>
+            </ul>
+            <a class="btn btn-molino mt-4" href="https://www.google.com/maps/search/?api=1&amp;query=C.+Margubete+5+Santo+Domingo+de+la+Calzada" target="_blank" rel="noopener">Cómo llegar <img src="img/iconos/flecha-blanca.svg" width="18" height="18" alt=""></a>
+          </div>
+          <iframe class="mapa mt-4" title="Mapa de El Molino de Floren" loading="lazy" src="https://maps.google.com/maps?q=C.%20Margubete%205%2C%20Santo%20Domingo%20de%20la%20Calzada&amp;z=16&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contenedor footer-contenido">
+      <div class="footer-columnas">
+        <div class="footer-marca">
+          <span class="footer-logo"><img class="rueda-giro" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" alt=""></span>
+          <p class="footer-nombre mb-0">El Molino<br>de Floren</p>
+          <p class="footer-desc mb-0">Hostal Boutique en un antiguo molino del S. XIX, en pleno Camino de Santiago. Santo Domingo de la Calzada, La Rioja.</p>
+          <div class="redes footer-redes">
+            <a href="https://www.facebook.com/198077190355329" aria-label="Facebook"><img src="img/iconos/facebook.svg" width="18" height="18" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="img/iconos/instagram.svg" width="18" height="18" alt=""></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Enlaces del pie">
+          <p class="eyebrow">Explorar</p>
+          <ul class="footer-lista">
+            <li><a href="hostal.html">Hostal Boutique</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="comedor.html">Comedor</a></li>
+            <li><a href="celebraciones.html">Celebraciones</a></li>
+            <li><a href="regala.html">Bonos regalo</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <p class="eyebrow">Contacto</p>
+          <ul class="footer-lista footer-contacto">
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>C. Margubete, 5 · 26250<br>Santo Domingo de la Calzada</span></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+34941342931">+34 941 342 931</a></li>
+            <li><svg class="i" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@elmolinodefloren.com">info@elmolinodefloren.com</a></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="contacto.html">Formulario de contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="eyebrow">Idioma</p>
+          <div class="idiomas">
+            <a href="#" class="active" aria-current="true">ES</a><a href="#">EN</a><a href="#">FR</a><a href="#">IT</a><a href="#">DE</a>
+          </div>
+          <a class="btn btn-claro mt-4" href="reserva.html">Reservar <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <span class="footer-sep"></span>
+      <div class="footer-legal">
+        <p class="mb-0">© 2026 El Molino de Floren</p>
+        <p class="mb-0"><a href="#">Privacidad</a> · <a href="#">Aviso legal</a> · <a href="#">Cookies</a></p>
+      </div>
+    </div>
+    <img class="footer-rueda rueda-giro" data-giro="-0.6" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" alt="" aria-hidden="true">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/contacto.js?v=11"></script>
+</body>
+</html>

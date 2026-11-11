@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habitaciones · El Molino de Floren</title>
+  <meta name="description" content="Habitaciones dobles, familiares y suites del Hostal Boutique El Molino de Floren.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="css/estilos.css?v=12" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="topbar-contacto">
+      <a href="tel:+34941342931"><img src="img/iconos/telefono.svg" width="14" height="14" alt="">+34 941 342 931</a>
+      <a href="mailto:info@elmolinodefloren.com"><img src="img/iconos/email.svg" width="14" height="14" alt="">info@elmolinodefloren.com</a>
+      <span class="d-none d-lg-flex"><img src="img/iconos/ubicacion.svg" width="14" height="14" alt="">C. Margubete, 5 · Santo Domingo de la Calzada</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-molino sticky-top">
+    <div class="navbar-wrap">
+      <a class="navbar-brand marca" href="index.html">
+        <img class="rueda rueda-giro" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" width="47" height="45" alt="">
+        <span class="marca-nombre">El Molino<br>de Floren</span>
+      </a>
+
+      <div class="nav-acciones order-lg-last">
+        <div class="dropdown">
+          <button class="idioma" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Cambiar idioma">
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/iconos/idioma.svg">
+              <img class="icono-idioma" src="img/iconos/idioma-movil.svg" width="16" height="16" alt="">
+            </picture>
+            ES
+            <img src="img/iconos/chevron.svg" width="14" height="14" alt="">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end desplegable">
+            <li><a class="dropdown-item active" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Italiano</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
+        </div>
+        <button class="boton-menu d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <img src="img/iconos/menu.svg" width="24" height="24" alt="">
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info <img src="img/iconos/chevron.svg" width="14" height="14" alt=""></a>
+            <ul class="dropdown-menu desplegable">
+              <li><a class="dropdown-item" href="hostal.html">Hostal Boutique</a></li>
+              <li><a class="dropdown-item" href="celebraciones.html">Celebraciones</a></li>
+              <li><a class="dropdown-item" href="regala.html">Regala</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="habitaciones.html">Habitaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="comedor.html">Comedor</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cabecera-pagina">
+    <img class="cabecera-foto" src="img/habitaciones/cabecera.jpg" alt="">
+    <div class="contenedor cabecera-texto">
+      <ol class="migas" aria-label="Estás aquí">
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Habitaciones</li>
+      </ol>
+      <h1>Nuestras habitaciones</h1>
+      <p>Decoradas de formas únicas que otorgan a cada una de ellas un carácter especial.</p>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="seccion seccion-puntos">
+    <img class="deco deco-espiga deco-espiga-1" src="img/deco/espiga.svg" alt="" aria-hidden="true">
+    <img class="deco deco-espiga deco-espiga-2" src="img/deco/espiga.svg" alt="" aria-hidden="true">
+    <div class="contenedor">
+      <div class="cabecera-seccion cabecera-centrada">
+        <p class="eyebrow mb-0">Cada una con nombre de cereal</p>
+        <div class="ornamento" aria-hidden="true"><span></span><img class="rueda-giro" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" alt=""><span></span></div>
+        <h2 class="h2-molino mb-0">Elija su habitación</h2>
+        <p class="mb-0">En honor a los miles de millones de granos molidos en el antiguo edificio.</p>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar habitaciones">
+        <button class="filtro active" type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+        <button class="filtro" type="button" data-filtro="doble" aria-pressed="false">Dobles</button>
+        <button class="filtro" type="button" data-filtro="familiar" aria-pressed="false">Familiares y suites</button>
+        <button class="filtro" type="button" data-filtro="abuhardillada" aria-pressed="false">Abuhardillada</button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-11" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/11-avena-1.jpg" alt="Habitación 11 Avena, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/11-avena-2.jpg" alt="Habitación 11 Avena, foto 2" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-11" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-11" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 11</p>
+              <h3>Avena</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble con cama supletoria</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 3 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">80 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=11&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="familiar">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-12" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/12-familiar-1.jpg" alt="Habitación 12 Trigo, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/12-familiar-2.jpg" alt="Habitación 12 Trigo, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/12-familiar-3.jpg" alt="Habitación 12 Trigo, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-12" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-12" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 12</p>
+              <h3>Trigo</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Habitación familiar</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 4 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">95 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=12&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="familiar">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-13" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/13-mijo-1.jpg" alt="Habitación 13 Mijo, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/13-mijo-2.jpg" alt="Habitación 13 Mijo, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/13-mijo-3.jpg" alt="Habitación 13 Mijo, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-13" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-13" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 13</p>
+              <h3>Mijo</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Habitación familiar</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 4 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">95 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=13&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-14" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/doble-2-camas-1.jpg" alt="Habitación 14 Quinoa, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/doble-2-camas-2.jpg" alt="Habitación 14 Quinoa, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/doble-2-camas-3.jpg" alt="Habitación 14 Quinoa, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-14" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-14" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 14</p>
+              <h3>Quinoa</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble · 2 camas</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 2 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">65 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=14&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-15" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/doble-matrimonio-1.jpg" alt="Habitación 15 Chía, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/doble-matrimonio-2.jpg" alt="Habitación 15 Chía, foto 2" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-15" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-15" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 15</p>
+              <h3>Chía</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble · cama de matrimonio</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 2 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">65 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=15&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-21" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/21-cebada-1.jpg" alt="Habitación 21 Cebada, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/21-cebada-2.jpg" alt="Habitación 21 Cebada, foto 2" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-21" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-21" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 21</p>
+              <h3>Cebada</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble con cama supletoria</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 3 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">80 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=21&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="familiar">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-22" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/22-maiz-1.jpg" alt="Habitación 22 Maíz, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/22-maiz-2.jpg" alt="Habitación 22 Maíz, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/22-maiz-3.jpg" alt="Habitación 22 Maíz, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-22" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-22" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 22</p>
+              <h3>Maíz</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Suite familiar</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 4 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">110 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=22&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="familiar">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-23" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/23-centeno-1.jpg" alt="Habitación 23 Centeno, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/23-centeno-2.jpg" alt="Habitación 23 Centeno, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/23-centeno-3.jpg" alt="Habitación 23 Centeno, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-23" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-23" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 23</p>
+              <h3>Centeno</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Suite familiar · 4 camas</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 4 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">110 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=23&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-24" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/24-sorgo-1.jpg" alt="Habitación 24 Sorgo, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/24-sorgo-2.jpg" alt="Habitación 24 Sorgo, foto 2" loading="lazy"></div>
+                <div class="carousel-item"><img src="img/habitaciones/24-sorgo-3.jpg" alt="Habitación 24 Sorgo, foto 3" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-24" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-24" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 24</p>
+              <h3>Sorgo</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble · 2 camas</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 2 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">65 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=24&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="doble">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-25" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/25-amaranto-1.jpg" alt="Habitación 25 Amaranto, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/25-amaranto-2.jpg" alt="Habitación 25 Amaranto, foto 2" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-25" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-25" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 25</p>
+              <h3>Amaranto</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Doble · cama doble</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 2 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">65 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=25&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 hab-col" data-cat="abuhardillada">
+          <article class="card card-seccion hab-card h-100">
+            <div id="carrusel-31" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/habitaciones/31-granero-1.jpg" alt="Habitación 31 Granero, foto 1"></div>
+                <div class="carousel-item"><img src="img/habitaciones/31-granero-2.jpg" alt="Habitación 31 Granero, foto 2" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-31" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-31" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+            </div>
+            <div class="card-body">
+              <p class="eyebrow mb-0">Habitación 31</p>
+              <h3>Granero</h3>
+              <ul class="hab-datos">
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>Abuhardillada · matrimonio</li>
+                <li><svg class="i" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Hasta 2 personas</li>
+              </ul>
+              <div class="hab-pie">
+                <p class="precio mb-0">75 €<small>por noche</small></p>
+                <a class="btn btn-molino btn-pequeno" href="reserva.html?habitacion=31&amp;adultos=2">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-crema">
+    <div class="contenedor dos-columnas">
+      <div>
+        <div class="cabecera-seccion">
+        <p class="eyebrow mb-0">Servicios</p>
+        
+        <h2 class="h2-molino mb-0">En todas las habitaciones</h2>
+        
+      </div>
+        <ul class="lista-check">
+          <li>Colchones de látex con aloe vera, antiácaros y antibacterianos</li>
+          <li>Baño completo con ducha y set de amenidades</li>
+          <li>Calefacción con termostato individual</li>
+          <li>Televisión LED orientable</li>
+          <li>Servicio diario de habitaciones y cambio de toallas</li>
+          <li>WiFi gratuito</li>
+          <li>Cuna según disponibilidad</li>
+        </ul>
+      </div>
+      <img class="foto-marco" src="img/habitaciones/22-maiz-1.jpg" alt="Suite familiar Maíz">
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contenedor footer-contenido">
+      <div class="footer-columnas">
+        <div class="footer-marca">
+          <span class="footer-logo"><img class="rueda-giro" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" alt=""></span>
+          <p class="footer-nombre mb-0">El Molino<br>de Floren</p>
+          <p class="footer-desc mb-0">Hostal Boutique en un antiguo molino del S. XIX, en pleno Camino de Santiago. Santo Domingo de la Calzada, La Rioja.</p>
+          <div class="redes footer-redes">
+            <a href="https://www.facebook.com/198077190355329" aria-label="Facebook"><img src="img/iconos/facebook.svg" width="18" height="18" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="img/iconos/instagram.svg" width="18" height="18" alt=""></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Enlaces del pie">
+          <p class="eyebrow">Explorar</p>
+          <ul class="footer-lista">
+            <li><a href="hostal.html">Hostal Boutique</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="comedor.html">Comedor</a></li>
+            <li><a href="celebraciones.html">Celebraciones</a></li>
+            <li><a href="regala.html">Bonos regalo</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <p class="eyebrow">Contacto</p>
+          <ul class="footer-lista footer-contacto">
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>C. Margubete, 5 · 26250<br>Santo Domingo de la Calzada</span></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+34941342931">+34 941 342 931</a></li>
+            <li><svg class="i" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@elmolinodefloren.com">info@elmolinodefloren.com</a></li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg><a href="contacto.html">Formulario de contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="eyebrow">Idioma</p>
+          <div class="idiomas">
+            <a href="#" class="active" aria-current="true">ES</a><a href="#">EN</a><a href="#">FR</a><a href="#">IT</a><a href="#">DE</a>
+          </div>
+          <a class="btn btn-claro mt-4" href="reserva.html">Reservar <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <span class="footer-sep"></span>
+      <div class="footer-legal">
+        <p class="mb-0">© 2026 El Molino de Floren</p>
+        <p class="mb-0"><a href="#">Privacidad</a> · <a href="#">Aviso legal</a> · <a href="#">Cookies</a></p>
+      </div>
+    </div>
+    <img class="footer-rueda rueda-giro" data-giro="-0.6" src="img/general/Icono_de_rueda_de_molino_marrón-removebg-preview.png" alt="" aria-hidden="true">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js?v=11"></script>
+  <script src="js/habitaciones.js?v=11"></script>
+</body>
+</html>
